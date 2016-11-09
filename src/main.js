@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue from 'vue/dist/vue.js'
 import Router from 'vue-router';
 
 
@@ -28,10 +28,10 @@ const router = new Router({
 new Vue({
   el: '#app',
   render: h => h(App),
-  router: router
+  router: router,
+  // components: {App}
 })
 
-
-
-
-
+// router.start({
+//     components: {App}
+// }, '#app')
